@@ -6,9 +6,9 @@ A Scrapy web crawler downloading content from a list of websites.
 # Dependencies
 - Scrapy
 - Splash
-- Redis
+- Redis with rdbtools
 
 # Instructions
 - Input urls into list.txt with one url in one line.
-- Type::
-sudo scrapy crawl standalone
+- Type "sudo scrapy crawl standalone" to start the crawler.
+- After everything finishes, use rdbtools to export data from redis e.g. "rdb -c json ./dump.rdb > output.json".
